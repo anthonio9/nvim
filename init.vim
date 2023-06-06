@@ -29,6 +29,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' } " bufferline
 Plug 'crispgm/nvim-tabline' " more basic bufferline / tabline
 Plug 'stevearc/aerial.nvim' " symbol outline
 Plug 'numToStr/Comment.nvim' " commenting plugin
+Plug 'yaegassy/coc-pylsp', {'do': 'yarn install --frozen-lockfile'} " install python support for coc.nvim
 call plug#end()
 
 set termguicolors
