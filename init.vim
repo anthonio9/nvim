@@ -12,6 +12,8 @@ set autoindent
 " hybrid line numbers
 set number relativenumber
 
+set clipboard+=unnamedplus " set clipboard to be shared with the system clipboard
+
 
 call plug#begin()
 Plug 'neoclide/coc.nvim' " coc auto completion
