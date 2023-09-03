@@ -4,7 +4,7 @@ Simple, yet sufficient _nvim_ config made by _anthonio9_.
 
 == How to put this together, so that I don't have to google again
 
-Install _vim-plug_
+.*Install _vim-plug_*
 
 [source, bash]
 ----
@@ -14,11 +14,11 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 Open `nvim ~/.config/nvim/init.vim` and run `:PlugInstall`.
 
-Install _coc-clangd_ for C/C++ development
+.*Install _coc-clangd_ for C/C++ development*
 
 Run `:CocInstall coc-clangd`, if there's no `clangd` in your `$PATH`, you can run `:CocCommand clangd.install` to install the https://github.com/clangd/clangd/releases[latest release] from GitHub.
 
-Install yarn
+.*Install yarn*
 
 [source, bash]
 ----
@@ -27,3 +27,10 @@ sudo pacman -S yarn
 ----
 
 Move to `~/.local/share/nvim/plugged/coc.nvim` and run `yarn install`.
+
+== How to update the plugin config? 
+
+Run below command to list all the commit id's with a directory name
+
+[subs+attributes]
+ $ for dir in ./* ; do (cd "$dir" && echo $dir && git rev-parse HEAD); done 

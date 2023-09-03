@@ -33,6 +33,7 @@ Plug 'yaegassy/coc-pylsp', {'do': 'yarn install --frozen-lockfile', 'commit' : '
 Plug 'mfussenegger/nvim-dap', {'commit' : '31e1ece773e10448dcb616d5144290946a6264b7'} " DAP Debug Adapter Protocol
 Plug 'mfussenegger/nvim-dap-python', {'commit' : '37b4cba02e337a95cb62ad1609b3d1dccb2e5d42'} " Pyton extension of DAP
 Plug 'rcarriga/nvim-dap-ui', {'commit' : '85b16ac2309d85c88577cd8ee1733ce52be8227e'} "better UI for DAP
+Plug 'kevinhwang91/promise-async' | Plug 'kevinhwang91/nvim-ufo' " code folding plugin
 call plug#end()
 
 set termguicolors
@@ -53,6 +54,7 @@ lua require('config.aerial-config')
 lua require('Comment').setup()
 lua require('config.nvim-dap-config')
 lua require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
+lua require('config.nvim-ufo-config')
 
 lua << EOF
   require("which-key").setup {
