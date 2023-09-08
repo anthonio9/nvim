@@ -42,5 +42,13 @@ require('aerial').setup({
 })
 -- You probably also want to set a keymap to toggle aerial
 vim.keymap.set('n', '<C-A>', '<cmd>AerialToggle!<CR>')
+vim.keymap.set('n', '<C-J>', function ()
+    vim.cmd('AerialNext')
+    vim.fn.feedkeys('zt')
+end)
+vim.keymap.set('n', '<C-K>', function()
+    vim.cmd('AerialPrev')
+    vim.fn.feedkeys('zt')
+end)
 -- vim.keymap.set('n', '<leader>a', '<cmd>AerialToggle!<CR>')
 
