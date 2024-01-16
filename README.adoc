@@ -34,3 +34,12 @@ Run below command to list all the commit id's with a directory name
 
 [subs+attributes]
  $ for dir in ./* ; do (cd "$dir" && echo $dir && git rev-parse HEAD); done 
+
+== Enable shared clipboard
+
+Shared clip board is enabled by default, however `xclip` package may need to be installed
+
+[source, bash]
+----
+sudo pacman -S xclip
+----
