@@ -42,3 +42,4 @@ vim.opt.relativenumber = true
 
 vim.opt.clipboard = "unnamedplus" --set clipboard to be shared with the system clipboard
 
+require("core.keymaps")

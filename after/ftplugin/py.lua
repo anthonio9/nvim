@@ -13,6 +13,8 @@ require('lspconfig').pylsp.setup{
   }
 }
 
+local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 -- lspconfig = require("lspconfig")
 -- lspconfig["pylsp"].setup {
 -- on_attach = custom_attach,
