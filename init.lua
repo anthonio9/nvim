@@ -19,6 +19,7 @@ require('config.aerial-config')
 require('indent_blankline').setup()
 require('config.nvim-dap-config')
 require('which-key').setup()
+require('config.nvim-bqf-config')
 
 --:checkhealth show existing tab with 4 spaces width
 vim.opt.tabstop = 4

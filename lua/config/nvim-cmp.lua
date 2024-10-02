@@ -41,6 +41,9 @@ cmp.setup {
   view = {
     entries = "custom",
   },
+  experimental = {
+    ghost_text = true,
+  },
   -- formatting = {
   --   format = lspkind.cmp_format {
   --     mode = "symbol_text",

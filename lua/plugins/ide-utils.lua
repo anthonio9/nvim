@@ -76,5 +76,9 @@ return
         -- better UI for DAP
         'rcarriga/nvim-dap-ui', 
         commit = '85b16ac2309d85c88577cd8ee1733ce52be8227e' 
-    }
+    },
+    {
+        'kevinhwang91/nvim-bqf',
+        commit = '1b24dc6050c34e8cd377b6b4cd6abe40509e0187'
+    },
 }
