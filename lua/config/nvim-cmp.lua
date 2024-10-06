@@ -33,6 +33,7 @@ cmp.setup {
     -- { name = "path" }, -- for path completion
     { name = "buffer", keyword_length = 2 }, -- for buffer word completion
     -- { name = "emoji", insert = true }, -- emoji completion
+    { name = 'nvim_lsp_signature_help' }, -- function signatures with the current paramter emphasized
   },
   completion = {
     keyword_length = 1,
