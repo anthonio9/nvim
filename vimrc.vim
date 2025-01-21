@@ -1,4 +1,4 @@
-call plug#begin()
+"call plug#begin()
 " Plug 'neoclide/coc.nvim', {'commit' : '1038082aaaab22fcb552d60e0e40589ec49b2c11'} " coc auto completion
 " Plug 'jiangmiao/auto-pairs', {'commit' : '39f06b873a8449af8ff6a3eee716d3da14d63a76'}  " auto closing paris [] ()
 " Plug 'gruvbox-community/gruvbox' , {'commit' : '2b5b1f777f0583ffb39086d6c16f39e6e37459c0'} " gruvbox
@@ -19,7 +19,7 @@ call plug#begin()
 " Plug 'kevinhwang91/promise-async' | Plug 'kevinhwang91/nvim-ufo' " code folding plugin
 " Plug 'lukas-reineke/indent-blankline.nvim', {'tag' : 'v2.20.8'}
 " {'commit': 'f128b352c5eea2c20204f9d182ed14637908052d'} " graphical interpretation of indents
-call plug#end()
+"call plug#end()
 
 set termguicolors
 
