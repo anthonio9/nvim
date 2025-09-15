@@ -43,3 +43,10 @@ Shared clip board is enabled by default, however `xclip` package may need to be 
 ----
 sudo pacman -S xclip
 ----
+
+== To install an lsp server for python, run below:
+
+[source, bash]
+----
+pip install python-lsp-server
+----
