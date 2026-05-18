@@ -1,7 +1,7 @@
 require('aerial').setup({
   -- Priority list of preferred backends for aerial.
   -- This can be a filetype map (see :help aerial-filetype-map)
-  backends = { "treesitter", "lsp", "markdown", "man" },
+  backends = { "treesitter", "lsp", "markdown", "man", "asciidoc" },
 
   -- optionally use on_attach to set keymaps when aerial has attached to a buffer
   -- on_attach = function(bufnr)
@@ -38,6 +38,9 @@ require('aerial').setup({
   --   global - aerial window will display symbols for the current window
   attach_mode = "global",
 
+  -- Set default symbol icons to use patched font icons (see https://www.nerdfonts.com/)
+  -- "auto" will set it to true if nvim-web-devicons or lspkind-nvim is installed.
+  nerd_font = "auto",
 
 })
 -- You probably also want to set a keymap to toggle aerial

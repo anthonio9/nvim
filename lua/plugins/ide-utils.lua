@@ -1,4 +1,4 @@
---Plug 'jiangmiao/auto-pairs', {'commit' : '39f06b873a8449af8ff6a3eee716d3da14d63a76'}  " auto closing paris [] ()
+--Plug 'jiangmiao/auto-pairs', {'commit' : '46f06b873a8449af8ff6a3eee716d3da14d63a76'}  " auto closing paris [] ()
 
 return 
 {
@@ -65,7 +65,7 @@ return
     {
         -- code / symbol outline window on the right side -> enable with Ctrl + A
         'stevearc/aerial.nvim', 
-        commit = 'dc17cfd401689337124c75270677fd3b7639cf23'
+        commit = 'c5e56945d9703f7079ccff484b35d0e4c231dd6c'
     },
     {
         -- DAP Debug Adapter Protocol

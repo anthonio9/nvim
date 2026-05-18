@@ -1,28 +1,26 @@
-local lspconfig = require("lspconfig")
-lspconfig.pylsp.setup {
-on_attach = custom_attach,
-settings = {
+vim.lsp.config("pylsp", {
+  on_attach = custom_attach,
+  capabilities = capabilities,
+
+  settings = {
     pylsp = {
-    plugins = {
+      plugins = {
         -- formatter options
         black = { enabled = true },
         autopep8 = { enabled = false },
         yapf = { enabled = false },
+
         -- linter options
         pylint = { enabled = true, executable = "pylint" },
         pyflakes = { enabled = false },
         pycodestyle = { enabled = false },
-        -- -- type checker
-        -- pylsp_mypy = { enabled = true },
-        -- -- auto-completion options
-        -- jedi_completion = { fuzzy = true },
-        -- -- import sorting
-        -- pyls_isort = { enabled = true },
+      },
     },
-    },
-},
-flags = {
+  },
+
+  flags = {
     debounce_text_changes = 200,
-},
-capabilities = capabilities,
-}
+  },
+})
+
+vim.lsp.enable("pylsp")
