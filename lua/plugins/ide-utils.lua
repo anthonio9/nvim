@@ -81,4 +81,14 @@ return
         'kevinhwang91/nvim-bqf',
         commit = '1b24dc6050c34e8cd377b6b4cd6abe40509e0187'
     },
+    {
+        "mpas/marp-nvim",
+        config = function()
+            require("marp").setup({
+                port = 8080,
+                wait_for_response_timeout = 30,
+                wait_for_response_delay = 1,
+            })
+        end,
+    },
 }

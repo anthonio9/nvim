@@ -50,3 +50,22 @@ sudo pacman -S xclip
 ----
 pip install python-lsp-server
 ----
+
+== Install nerd fonts
+
+1. Visit https://www.nerdfonts.com/[NerdFonts] and install a proper font, perhaps **JetBrainsMono**?
+2. Download and extract the font to __~/.local/share/fonts/FONTNAME__.
+
+[source, bash]
+----
+unzip ~/Downloads/font.zip -d ~/.local/share/fonts/FONTNAME
+----
+
+3. Rebuild the font cache, inspect the logs to make sure that your path was included
+
+[source, bash]
+----
+fc-cache -f -v
+----
+
+4. Find the font name in the terminal emulator preferences.
