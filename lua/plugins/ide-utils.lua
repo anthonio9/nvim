@@ -35,7 +35,7 @@ return
     {
         -- synthax highlighting
         'nvim-treesitter/nvim-treesitter', -- {'do': ':TSUpdate', }
-        commit = 'f0f115e926df05d2f1363eb9aa93714056f29827'
+        commit = 'cf12346a3414fa1b06af75c79faebe7f76df080a'
     },
     {
         -- commenting plugin
