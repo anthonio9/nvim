@@ -1,3 +1,10 @@
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+local function custom_attach(client, bufnr)
+  -- Enable completion triggered by <c-x><c-o>
+  vim.bo[bufnr].omnifunc = 'v:lua.vim.lsp.omnifunc'
+end
+
 vim.lsp.config("pylsp", {
   on_attach = custom_attach,
   capabilities = capabilities,
@@ -12,7 +19,7 @@ vim.lsp.config("pylsp", {
         -- linter options
         pylint = { enabled = true, executable = "pylint" },
         pyflakes = { enabled = false },
-        pycodestyle = { enabled = false },
+        pycodestyle = { enabled = true, ignore = {'W391'}, maxLineLength = 100 },
 
         -- -- type checker
         -- pylsp_mypy = { enabled = true },
@@ -29,10 +36,14 @@ vim.lsp.config("pylsp", {
 })
 
 vim.lsp.config('autotools_ls', {
+  on_attach = custom_attach,
+  capabilities = capabilities,
   filetypes = { 'config', 'automake', 'make', 'm4' },
 })
 
 vim.lsp.config('clangd', {
+  on_attach = custom_attach,
+  capabilities = capabilities,
   init_options = {
     fallbackFlags = { '--std=c++14' },
   },
